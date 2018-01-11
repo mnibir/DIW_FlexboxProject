@@ -1,0 +1,148 @@
+
+/*Todos los elementos*/
+*{	margin: 0px; padding: 0px;	box-sizing: border-box;	font-family: times; }
+
+/*Enlaces*/
+a{	display: inline-block;	text-decoration: none;	color: #1b2631; }
+a:hover{ color: #1f618d;   text-shadow: 1px 1px 2px white; }
+
+
+/*BODY*/
+body{ font-size: 1.1em; }
+
+
+/*HEADER*/
+header{	text-align: center; }
+#logo a{ 
+	font-style: italic; color: white;	
+	text-shadow: 1px 1px 5px black, 0 0 5px darkblue;
+	background-color: white;	 
+	border-radius: 10px;	
+}
+
+
+/*MAIN*/
+/*Botones*/
+main a,input[type=submit]{
+    border: 3px solid #1f618d;
+	border-radius: 15px;
+	background-color: lightgray;
+	padding: 10px;
+	text-align: center;
+}
+main a:hover,input[type=submit]:hover{
+	background-color: gray;
+}
+
+/*Banner*/
+#banner{
+	background: url("../img/smartphone-1445489_1920.jpg") center no-repeat;
+	background-size: cover;
+	height: 75vh;
+}
+
+/*index.html*/
+#contenedorIndice{
+	height: 50vh;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
+/*professionalInscription.html*/
+#contenedorInscripcion{
+	text-align: center;
+	padding-top: 15px; 
+	padding-bottom: 15px; 
+}
+
+/*professionalFields.html*/
+#contenedorProfesiones{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+.botonProfesion{ width: 90%; }
+
+
+/*professionalField_??.html*/
+#formularioFiltro{ padding: 15px; }
+.contenedorProfesional{ 
+	border: 3px solid #1f618d;
+	border-radius: 15px;
+	background-color: lightgray;
+	margin: 15px; padding: 15px;
+}
+.contenedorProfesional a{ margin: 5px; }
+.imagenProfesional img{ width: 75%; height: auto; border-radius: 15px; }
+.ofertaProfesional{ padding-top: 5px; font-weight: bold; }
+.perfilProfesional{ text-align: center; padding-top: 5px; }
+
+
+/*ASIDE*/
+aside{ background-color: darkgray;	padding: 20px 0; }
+.menuPie{ text-align: center; padding: 10px;}
+
+
+/*FOOTER*/
+footer{
+	background-color: darkgray;
+	text-align: left;
+	padding: 2%;
+	height: 20vh; 
+	margin-bottom: 0px;
+	line-height: 20vh;
+}
+
+
+/*FORMULARIOS*/
+form{
+	display: inline-block;
+	text-align: left;
+	border: 3px solid #1f618d;
+	border-radius: 15px;
+	background-color: lightgray;
+	padding: 20px;
+}
+form *:not(label,p){ background-color: white; border-radius: 2px; }
+input[type=checkbox]{ transform: scale(1.5); }
+
+
+/*RESPONSIVE*/
+@media (min-width: 900px){
+	/*BODY*/
+	body{ font-size: 1.2em; }
+
+	/*MAIN*/
+	/*professionalFields.html*/
+	#contenedorProfesiones{ height: 50vh; }
+	.botonProfesion{ width: 30%; }
+
+	/*professionalField_??.html*/
+	#contenedorBusqueda{
+		display: flex;
+		justify-content: space-around;
+	}
+	#formularioFiltro{ width: 25%; }
+	#contenedorProfesionales{ width: 65%; }
+	.contenedorProfesional{	
+		width: 90%; 
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+	.imagenProfesional{ width: 40%; }
+	.imagenProfesional img{ width: 100%; height: auto; }
+	.descripcionProfesional{ width: 40%; }
+	.ofertaProfesional{ width: 40%; order: 1; }
+	.perfilProfesional{ width: 40%; order: 1; }
+
+	/*ASIDE*/
+	aside{
+		display: flex;
+		justify-content: space-around;
+	}
+}
+
